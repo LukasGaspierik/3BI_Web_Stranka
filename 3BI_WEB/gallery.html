@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Luka Design Web</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+              <div id="branding">
+                <h1><span class="highlight">Luka</span>Design Web</h1>
+              </div>
+              <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>    
+              </nav>
+            </div>
+        </header>
+        <section>
+        <div class="full-img" id="fullImgBox">
+            <img src="image/garden.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+   
+    <div class="img-gallery">
+        <img src="image/bedroom.jfif" onclick="openFullImg(this.scr)">
+        <img src="image/office1.jpg"  onclick="openFullImg(this.scr)">
+        <img src="image/photo.jpeg"   onclick="openFullImg(this.scr)">
+        <img src="image/garden.jpg"   onclick="openFullImg(this.scr)">
+        <img src="image/kitchen.jpg"  onclick="openFullImg(this.scr)">
+        <img src="image/bedroom.jpg"  onclick="openFullImg(this.scr)">
+        <img src="image/living.jpg"   onclick="openFullImg(this.scr)">
+        <img src="image/office.jfif"  onclick="openFullImg(this.scr)">
+    </div>
+    </section>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox")
+    var fullImg = document.getElementById("fullImgBox")
+
+    function openFullImg(pic){
+        fullImgBox.style.display ="flex"
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display ="none"
+        fullImg.src = pic;
+    }
+</script>
+
+         <footer>
+            <p>Contact us +421 903 372 381 or Email 2Lukasga12@gmail.com</p>
+        </footer>  
+    </body>
+</html>
